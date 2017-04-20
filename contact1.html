@@ -1,0 +1,251 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body
+{
+background-image:url("49.jpg");
+}
+
+p
+{
+color:red;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.tab
+{
+  padding:40px 40px 40px 60px;
+}
+td
+{
+cellspacing:100;
+padding:5PX;
+}
+
+
+</style>
+</head>
+<body>
+<form>
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" style="padding-right:600px"><strong>Gokul</strong></a>
+    </div>
+    <ul class="nav navbar-nav">
+	
+      <li ><a href="slide.html"><strong>Home</strong></a></li>
+      <li><a href="about1.html"><strong>About</strong></a></li>
+      <li class="active"><a href="Contact1.html"><strong>contact</strong></a></li>
+	  <li><a href="gallery1.html"><strong>Gallery</strong></a><li>
+    </ul>
+  </div>
+</nav>
+<br>
+</table>
+</center>
+
+
+
+
+
+<script>
+function myFunction () {
+//window.alert(a+b);
+
+	var a=document.getElementById("a").value;
+	//document.write(a.length);
+	var b= document.getElementById("b").value;
+	var c= document.getElementById("c").value;
+	//For name
+	if(a=="")
+	{
+	document.getElementById("x").innerHTML="Please fill the name";
+	}
+	else if(a.length<7)
+	
+	{
+	document.getElementById("x").innerHTML="atleast 7 character";
+	}
+	else
+	{
+	document.getElementById("x").innerHTML="";
+	}
+	
+	
+	
+	
+	//For contact
+	
+	if(c=="")
+	{
+	document.getElementById("z").innerHTML="please fill the number";
+	}
+	
+	if(!c.match(/[0-9]/))
+	{
+	
+	document.getElementById("z").innerHTML="fill numbers";
+	}
+	else if(c.length<10)
+	{
+	document.getElementById("z").innerHTML="atleast 10 numbers";
+	}
+	else if(c.length>10)
+	{
+	document.getElementById("z").innerHTML="only 10 numbers";
+	}
+	else
+	{
+	document.getElementById("z").innerHTML="";
+	}
+	
+	
+	
+	//for email
+	var email=/^([a-zA-Z0-9.-_]+@[a-zA-Z.-]+\.[a-zA-Z]{2,4}$)/;
+	if(b=="")
+	{
+	document.getElementById("y").innerHTML=" email id is empty";
+	}
+	else if(!b.match(email))
+	{
+	document.getElementById("y").innerHTML="invalid email id";
+	
+	}
+	else
+	{
+	document.getElementById("y").innerHTML="";
+	}
+	
+	}
+	function em() {
+	var ema=document.getElementById("b").value;
+	if(ema=="")
+	{
+	//alert();
+	document.getElementById("y").innerHTML="empty";
+	}
+	
+	}
+	</script>
+	</body>
+	<div class="container-fluid">
+	 <div class="row">
+	 <div class="col-sm-7">
+	<center>
+	<table >
+<tr>
+	<td><label>Name</label></td>
+	<td><input id="a" type="text"   placeholder="Your name.."></td>
+	<td><p id="x"></p></td>
+</tr>
+<br>
+<tr>
+	<td><label>Email id</label></td>
+	<td><input id="b" type="text"   placeholder="Your Email id.." required></td>
+	<td><p id="y"></p></td>
+</tr>
+<br>
+<tr>
+	<td><label>Contact</label></td>
+	<td><input id="c" type="text" required  placeholder="number.."></td>
+	<td><p id="z"></p></td>
+</tr>
+<br>
+</table>
+</center> <br/>
+<center>
+<button type="button" onclick="myFunction()" class="btn btn-default">Submit</button>
+
+</center>
+</div>
+
+
+ <div class="col-sm-5">
+ 
+       
+	   
+       
+       <div class="tab"><!--start of tab div-->
+	   
+       <table>
+	   <tr>
+	   <h1><p style="color:black;">My Social World</p></h1></tr>
+      <br>
+         
+         <tr>
+         <td><i class="fa fa-facebook fa-2x"></i>
+         </td>
+         <td>
+           <a target="_blank" href="https://www.facebook.com/gokul11491" style="font-size:25px">  <i class="glyphicon icon-facebook"></i>Facebook/gokul11491</a>
+         </td>
+       </tr>
+         
+       <tr>
+         <td>
+           <i class="fa fa-github fa-2x"></i>
+         </td>
+         <td>
+           <a target="_blank" href="https://github.com/joygokul" style="font-size:25px"> Github/joygokul</a>
+         </td>
+       </tr>
+         
+       <tr>
+         <td>
+           <i class="fa fa-instagram fa-2x"></i>
+         </td>
+         <td>
+           <a target="_blank" href="https://www.instagram.com/joy.gokul/" style="font-size:25px"> Instagram/joy.gokul</a>
+         </td>
+       </tr>   
+         
+         
+          
+         
+     </table>
+       </div>
+    </div>
+ <br></br>
+<br></br>
+<br></br> 
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+
+
+<footer>
+<nav class="navbar navbar-inverse">
+
+   <center>
+      <a class="navbar-brand" target="_blank"href="https://github.com/joygokul"style="padding-left:600px">Created by: <strong>Joy Gokul</strong></a>
+ 
+	</center>
+    
+</nav>	
+</footer>
+
+</form>
+</body>
+</html>
+
+
